@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleStore - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/common.js"></script>
+    <script src="js/cart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="container">
+        <div class="logo">
+          <h1>StyleStore</h1>
+        </div>
+        <button
+          class="hamburger"
+          aria-label="Toggle navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav role="navigation" aria-label="Main navigation">
+          <ul id="primary-navigation">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2>Welcome to StyleStore</h2>
+            <p>
+              Discover the latest trends in fashion with our affordable
+              collection.
+              <br />
+              <br />
+            </p>
+            <a href="products.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <div class="container">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="product-grid">
+            <div class="product-card" data-category="men" data-price="19.99">
+              <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+                alt="A man Wearing a classic White T shirt"
+              />
+              <h3>Classic White T-shirt</h3>
+              <p class="price">$19.99</p>
+              <button
+                class="btn add-to-cart"
+                data-id="1"
+                data-name="Classic White T-shirt"
+                data-price="19.99"
+                data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+                data-alt="A man Wearing a classic White T shirt"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="product-card" data-category="men" data-price="39.99">
+              <img
+                src="https://images.unsplash.com/photo-1542272604-787c3835535d"
+                alt="Pair of denim Jeans of different colors."
+              />
+              <h3>Black Denim Jeans</h3>
+              <p class="price">$39.99</p>
+              <button
+                class="btn add-to-cart"
+                data-id="2"
+                data-name="Black Denim Jeans"
+                data-price="39.99"
+                data-image="https://images.unsplash.com/photo-1542272604-787c3835535d"
+                data-alt="Pair of denim Jeans of different colors."
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="product-card" data-category="men" data-price="49.99">
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772"
+                alt="Cool aesthetic White Sneakers for male and female"
+              />
+              <h3>White Sneakers</h3>
+              <p class="price">$49.99</p>
+              <button
+                class="btn add-to-cart"
+                data-id="3"
+                data-name="White Sneakers"
+                data-price="49.99"
+                data-image="https://images.unsplash.com/photo-1549298916-b41d501d3772"
+                data-alt="Cool aesthetic White Sneakers for male and female"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="product-card" data-category="men" data-price="59.99">
+              <img
+                src="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+                alt="A person wearing a Denim Jacket sitting behind a laptop on a table in a cafe"
+              />
+              <h3>Denim Jacket</h3>
+              <p class="price">$59.99</p>
+              <button
+                class="btn add-to-cart"
+                data-id="4"
+                data-name="Denim Jacket"
+                data-price="59.99"
+                data-image="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+                data-alt="A person wearing a Denim Jacket sitting behind a laptop on a table in a cafe"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="view-all">
+            <a href="products.html" class="btn secondary">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container">
+          <h2 class="section-title">Shop by Category</h2>
+          <div class="category-grid">
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1516257984-b1b4d707412e"
+                alt="Men's Clothing"
+              />
+              <h3>Men's Clothing</h3>
+              <a href="products.html?category=men" class="category-link"
+                >Browse</a
+              >
+            </div>
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3"
+                alt="Women's Clothing"
+              />
+              <h3>Women's Clothing</h3>
+              <a href="products.html?category=women" class="category-link"
+                >Browse</a
+              >
+            </div>
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561"
+                alt="Accessories"
+              />
+              <h3>Accessories</h3>
+              <a href="products.html?category=accessories" class="category-link"
+                >Browse</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates on new products and upcoming sales.</p>
+          <form>
+            <input
+              aria-label="news-letter Email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About StyleStore</h3>
+            <p>Your destination for affordable fashion and accessories.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>
+              123 Fashion Street<br />Style City, SC 12345<br />Email:
+              info@stylestore.com<br />Phone: (123) 456-7890
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 StyleStore. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

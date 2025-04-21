@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleStore - Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/common.js"></script>
+    <script src="js/cart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="container">
+        <div class="logo">
+          <a id="logo-a-tag" href="index.html"><h1>StyleStore</h1></a>
+        </div>
+        <button
+          class="hamburger"
+          aria-label="Toggle navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav role="navigation" aria-label="Main navigation">
+          <ul id="primary-navigation">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="page-header">
+        <div class="container">
+          <h2>Shopping Cart</h2>
+        </div>
+      </section>
+
+      <section class="cart">
+        <div class="container">
+          <div id="cart-items">
+            <!-- Cart items will be loaded here -->
+          </div>
+
+          <div class="cart-summary">
+            <div class="cart-total">
+              <h3>Cart Total: <span id="cart-total">$0.00</span></h3>
+            </div>
+            <div class="cart-actions">
+              <button id="continue-shopping" class="btn secondary">
+                Continue Shopping
+              </button>
+              <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About StyleStore</h3>
+            <p>Your destination for affordable fashion and accessories.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>
+              123 Fashion Street<br />Style City, SC 12345<br />Email:
+              info@stylestore.com<br />Phone: (123) 456-7890
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 StyleStore. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

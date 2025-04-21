@@ -1,0 +1,221 @@
+/* About Page Specific Styles */
+.about-content {
+  padding: 30px 0 50px;
+}
+
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Values Section */
+.values {
+  margin: 40px 0;
+}
+
+.values h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h4 {
+  color: #4a6fa5;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Team Section */
+.team {
+  margin: 40px 0;
+}
+
+.team h3 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.team-member-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member h4 {
+  margin: 0 0 5px;
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #f8f9fa;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+
+.testimonials h3 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  text-align: right;
+  color: #4a6fa5;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .about-sections {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-image {
+    flex: 0 0 45%;
+  }
+
+  .about-text {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card,
+  .testimonial {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
